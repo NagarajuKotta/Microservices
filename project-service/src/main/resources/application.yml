@@ -1,0 +1,20 @@
+server:
+  port: 9092
+spring:
+  config:
+    enabled: true
+  #cloud:
+   # gateway:
+    #  discovery:
+     #   locator:
+      #    lower-case-service-id: true
+  application:
+    name: PROJECT-SERVICE
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
